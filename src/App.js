@@ -8,9 +8,9 @@ function App() {
   // 비디오가 들어오는 리스트
   const [videos, setVideos] = useState([]);
   //
-  // 유저 웹앱 접속->마운트 되면 유튜브 api가장인기영상들 요청 ->화면에 보여줌
+  // 유저 웹앱 접속->마운트 됐을때 한번만 유튜브 api가장인기영상들 요청 ->화면에 보여줌
   useEffect(() => {
-    // 요청 로직 작성
+    // 요청 로직 작성 (포스트맨에서 제공받은 코드)
     var requestOptions = {
       method: "GET",
       redirect: "follow",
